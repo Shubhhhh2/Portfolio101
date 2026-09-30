@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shubh Mittal — ~/portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#top" class="logo" data-testid="nav-logo">
+                shubh<span class="green">@</span>mittal<span class="cursor"></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about" data-testid="nav-about"><span>01.</span>about</a></li>
+                <li><a href="#skills" data-testid="nav-skills"><span>02.</span>skills</a></li>
+                <li><a href="#projects" data-testid="nav-projects"><span>03.</span>projects</a></li>
+                <li><a href="#contact" data-testid="nav-contact"><span>04.</span>contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <p class="prompt fade-in">
+                    <span class="green">shubh@portfolio</span>:<span class="cyan">~</span>$ whoami
+                </p>
+
+                <h1 class="hero-title">
+                    <span class="line"><span>Hi, I'm</span></span>
+                    <span class="line"><span class="green">Shubh Mittal</span></span>
+                </h1>
+
+                <h2 class="hero-sub fade-in delay-1">
+                    Computer Science Student <b>•</b> Programmer <b>•</b> Builder
+                </h2>
+
+                <p class="hero-desc fade-in delay-2">
+                    I'm a computer science student exploring software development,
+                    problem solving, and building ideas that can solve real-world problems.
+                </p>
+
+                <div class="hero-buttons fade-in delay-3">
+                    <a href="#projects" class="btn btn-primary" data-testid="hero-projects-btn">cd ./projects</a>
+                    <a href="#contact" class="btn" data-testid="hero-contact-btn">./contact.sh</a>
+                </div>
+            </div>
+
+            <!-- neofetch style terminal -->
+            <div class="terminal hero-terminal fade-in delay-2" data-testid="hero-terminal">
+                <div class="terminal-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green-dot"></span>
+                    <p>shubh@portfolio: ~</p>
+                </div>
+
+                <div class="terminal-body">
+                    <p><span class="green">$</span> neofetch</p>
+
+                    <ul class="neofetch">
+                        <li><span>OS</span> Student Linux x86_64</li>
+                        <li><span>Host</span> Bengaluru, India</li>
+                        <li><span>Shell</span> bash + curiosity</li>
+                        <li><span>Langs</span> C++, Java, HTML/CSS</li>
+                        <li><span>Hobby</span> Competitive Programming</li>
+                        <li><span>Status</span> <em class="green">open to connect</em></li>
+                    </ul>
+
+                    <div class="color-blocks">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+
+                    <p><span class="green">$</span> <span class="cursor"></span></p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+  
+
+    <main>
+
+        <!-- ================= ABOUT ================= -->
+        <section id="about">
+
+            <p class="terminal-label">$ cat about_me.txt</p>
+
+            <h2 class="section-title">
+                QUIETLY COMPETITIVE.<br>
+                <span class="outline">LOUDLY CURIOUS.</span>
+            </h2>
+
+            <p class="about-desc">
+                I like building things, solving problems and testing new ideas
+                just to see what happens.
+            </p>
+
+            <div class="about-panels">
+
+                <div class="terminal" data-testid="about-currently">
+                    <div class="terminal-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green-dot"></span>
+                        <p>currently.txt</p>
+                    </div>
+                    <div class="terminal-body">
+                        <h3>CURRENTLY</h3>
+                        <ul class="arrow-list">
+                            <li>C++</li>
+                            <li>HTML / CSS</li>
+                            <li>Java</li>
+                            <li>Competitive Programming</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="terminal" data-testid="about-objective">
+                    <div class="terminal-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green-dot"></span>
+                        <p>next_objective.txt</p>
+                    </div>
+                    <div class="terminal-body">
+                        <h3>NEXT OBJECTIVE</h3>
+                        <p class="objective">Build something people actually use.</p>
+                        <p class="progress-label">progress</p>
+                        <div class="progress"><span></span></div>
+                        <p class="progress-label">[#######.......] loading...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="signature">build → break → learn → repeat</p>
+
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section id="skills">
+
+            <p class="terminal-label">$ cat skills.json</p>
+
+            <h2 class="section-title">SKILLS</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card" data-testid="skill-cpp">
+                    <span class="skill-num">01</span>
+                    <h3>C++</h3>
+                    <p>"type": "Programming"</p>
+                </div>
+
+                <div class="skill-card" data-testid="skill-web">
+                    <span class="skill-num">02</span>
+                    <h3>HTML / CSS</h3>
+                    <p>"type": "Web"</p>
+                </div>
+
+                <div class="skill-card" data-testid="skill-java">
+                    <span class="skill-num">03</span>
+                    <h3>JAVA</h3>
+                    <p>"type": "Programming"</p>
+                </div>
+
+                <div class="skill-card" data-testid="skill-linux">
+                    <span class="skill-num">04</span>
+                    <h3>LINUX</h3>
+                    <p>"type": "Terminal"</p>
+                </div>
+
+                <div class="skill-card skill-wide" data-testid="skill-cp">
+                    <span class="skill-num">05</span>
+                    <h3>COMPETITIVE PROGRAMMING</h3>
+                    <p>Solving problems &gt; memorizing syntax</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section id="projects">
+
+            <p class="terminal-label">$ ls -l ~/projects</p>
+
+            <h2 class="section-title">PROJECTS</h2>
+
+            <h3 class="divider">──── BUILT ────</h3>
+
+            <div class="projects-grid">
+
+                <div class="project-card" data-testid="project-tictactoe">
+                    <p class="perms">drwxr-xr-x &nbsp;shubh</p>
+                    <h3>tic-tac-toe/</h3>
+                    <p class="command">$ ./tic-tac-toe</p>
+                    <p class="project-desc">
+                        A terminal based Tic-Tac-Toe game that I built from scratch.
+                    </p>
+                    <div class="project-footer">
+                        <span class="badge badge-built">BUILT</span>
+                        <a href="#">VIEW PROJECT →</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-testid="project-rps">
+                    <p class="perms">drwxr-xr-x &nbsp;shubh</p>
+                    <h3>rock-paper-scissors/</h3>
+                    <p class="command">$ ./rock-paper-scissors</p>
+                    <p class="project-desc">
+                        A simple Rock Paper Scissors game built while experimenting with web development.
+                    </p>
+                    <div class="project-footer">
+                        <span class="badge badge-built">BUILT</span>
+                        <a href="#">VIEW PROJECT →</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="divider">──── EXPLORING ────</h3>
+
+            <div class="projects-grid">
+
+                <div class="project-card concept" data-testid="project-healthvault">
+                    <p class="perms">drwxr--r-- &nbsp;shubh</p>
+                    <h3>healthvault-local/</h3>
+                    <p class="command">$ cd ~/projects/healthvault</p>
+                    <p class="project-desc">
+                        A privacy focused health record idea where users have more control over their medical data.
+                    </p>
+                    <div class="project-footer">
+                        <span class="badge">CONCEPT</span>
+                        <a href="#">EXPLORE IDEA →</a>
+                    </div>
+                </div>
+
+                <div class="project-card concept" data-testid="project-marketplace">
+                    <p class="perms">drwxr--r-- &nbsp;shubh</p>
+                    <h3>b2b-marketplace/</h3>
+                    <p class="command">$ cd ~/projects/marketplace</p>
+                    <p class="project-desc">
+                        A B2B marketplace idea connecting businesses with raw material suppliers.
+                    </p>
+                    <div class="project-footer">
+                        <span class="badge">CONCEPT</span>
+                        <a href="#">EXPLORE IDEA →</a>
+                    </div>
+                </div>
+
+                <div class="project-card concept" data-testid="project-food">
+                    <p class="perms">drwxr--r-- &nbsp;shubh</p>
+                    <h3>food-aggregator/</h3>
+                    <p class="command">$ cd ~/projects/food-aggregator</p>
+                    <p class="project-desc">
+                        An idea for comparing food delivery prices across different platforms.
+                    </p>
+                    <div class="project-footer">
+                        <span class="badge">CONCEPT</span>
+                        <a href="#">EXPLORE IDEA →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact">
+
+            <p class="terminal-label">$ ./contact.sh</p>
+
+            <h2 class="section-title">LET'S <span class="green">CONNECT.</span></h2>
+
+            <p class="contact-desc">
+                Got an idea, want to collaborate, or just want to say hi?
+                Feel free to reach out.
+            </p>
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <h3>EMAIL</h3>
+                    <a href="mailto:mittalshubh887@gmail.com" data-testid="contact-email">mittalshubh887@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>GITHUB</h3>
+                    <a href="https://github.com/Shubhhhh2" target="_blank" data-testid="contact-github">github.com/Shubhhhh2</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>LINKEDIN</h3>
+                    <a href="https://www.linkedin.com/in/shubh-mittal-428261425/" target="_blank" data-testid="contact-linkedin">linkedin.com/in/shubh-mittal</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>LOCATION</h3>
+                    <p>Bengaluru, India</p>
+                </div>
+
+            </div>
+
+            <p class="contact-status" data-testid="contact-status">
+                <span class="pulse"></span> STATUS → OPEN TO CONNECT
+            </p>
+
+            <p class="contact-exit">$ exit<span class="cursor"></span></p>
+
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p>© 2026 Shubh Mittal</p>
+        
+        <a href="#top" data-testid="back-to-top">↑ cd ~</a>
+    </footer>
+
+</body>
+
+</html>
